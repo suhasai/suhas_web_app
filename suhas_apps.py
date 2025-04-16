@@ -9,9 +9,9 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-wine_model = pickle.load(open('C:/ML-Models and Apps/wine_model.sav','rb'))
-loan_model = pickle.load(open('C:/ML-Models and Apps/loan_prediction.sav','rb'))
-diab_model = pickle.load(open('C:/ML-Models and Apps/diabetes_model.sav','rb'))
+wine_model = pickle.load(open('wine_model.sav','rb'))
+loan_model = pickle.load(open('loan_prediction.sav','rb'))
+diab_model = pickle.load(open('diabetes_model.sav','rb'))
 
 with st.sidebar:
     selected = option_menu('Suhas Multi Apps System',['Wine Test','Loan Prediction', 'Diabetes Test'],default_index=0)
