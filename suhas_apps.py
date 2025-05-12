@@ -19,16 +19,28 @@ with st.sidebar:
 #Wine Prediction Page
 if (selected == 'Wine Test'):
     st.title('🍾 Wine Quality Test')
+    col1, col2, col3
+    with col1:
     fixed_acidity = st.text_input('Fixed Acidity')
+    with col2:
     volatile_acidity = st.text_input('Volatile Acidity')
+    with col3:
     citric_acid = st.text_input('Citric Acid')
+    with col1:
     residual_sugar = st.text_input('Residual Sugar')
+    with col2:
     chlorides = st.text_input('Chlorides')
+    with col3:
     free_sulfur_dioxide = st.text_input('Free Sulfur Dioxide')
+    with col1:
     total_sulfur_dioxide = st.text_input('Total Sulfur Dioxide')
+    with col2:
     density = st.text_input('Density')
+    with col3:
     pH = st.text_input('pH')
+    with col1:
     sulphates = st.text_input('Sulphates')
+    with col2:
     alcohol = st.text_input('Alcohol')
     
     wine_result = ''
