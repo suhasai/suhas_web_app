@@ -14,7 +14,7 @@ loan_model = pickle.load(open('loan_prediction.sav','rb'))
 diab_model = pickle.load(open('diabetes_model.sav','rb'))
 
 with st.sidebar:
-    selected = option_menu('Suhas Multi Apps System',['Wine Test','Loan Prediction', 'Diabetes Test'],default_index=0)
+    selected = option_menu('Suhas Multi Apps System',['Wine Test','Loan Prediction', 'Diabetes Test'], icons = ["Hourglass top", "Bank", "Activity"], default_index=0)
     
 #Wine Prediction Page
 if (selected == 'Wine Test'):
